@@ -6,6 +6,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router";
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Cars from "../pages/Cars";
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/cars" element={<Cars />}></Route>
       </Routes>
+      <footer>ⒸMade by Abishek #RentEasy</footer>
     </BrowserRouter>
   );
 }

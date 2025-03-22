@@ -7,17 +7,18 @@ body {
   font-size: 1.125rem;
   font-weight: 300;
   background-color: #fff7ed;
+  font-family: "Archivo", sans-serif;
   /* width: 100%; */
-}
-
-a {
-  text-decoration: none;
-  color: #222;
 }
 
 /* -----------------
     Typography
 --------------------*/
+
+a {
+  text-decoration: none;
+  color: #222;
+}
 
 .site-logo {
   font-family: "Archivo", sans-serif;
@@ -32,6 +33,33 @@ a {
   font-weight: 600;
   font-size: 1rem;
   color: #4d4d4d;
+}
+
+.home-container h1 {
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+
+.home-container p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 24px;
+  max-width: 580px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.home-container a {
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 1rem 9rem;
+  color: white;
+  border-radius: 5px;
+  background-color: #ff8c38;
+  margin-top: 0;
 }
 
 /* -----------------
@@ -51,4 +79,29 @@ header {
   justify-content: space-around;
   width: 7.25rem;
   height: 1.3rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("./assets/familycar.png");
+  background-color: #404040;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-position: center;
+  color: white;
+  padding: 4rem 1.6rem;
+  height: 81vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #252525;
+  color: rgba(255, 255, 255, 0.5);
 }
