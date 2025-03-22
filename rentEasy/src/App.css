@@ -111,6 +111,41 @@ a {
   border-radius: 10px;
 }
 
+.car-name,
+.car-price {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.car-type {
+  font-size: 1rem;
+  font-weight: 600;
+  /* padding: 0.16rem 1.2rem; */
+  padding: 3px 6px;
+  width: 5.3rem;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: -3px;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+.luxury {
+  background-color: #161616;
+  color: #ffead0;
+}
+
+.simple {
+  background-color: #e17654;
+  color: #ffead0;
+}
+
+.economy {
+  background-color: #115e59;
+  color: #ffead0;
+}
+
 /* -----------------
     Layout
 --------------------*/
@@ -161,6 +196,44 @@ header {
   border-radius: 10px;
 }
 
+.cars-container {
+  width: 100%;
+  padding: 0;
+}
+
+.cars-list-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.5rem;
+  flex: 1 0;
+}
+
+.car-div {
+  width: 90%;
+}
+
+.image-div {
+  width: 100%;
+}
+
+.car-div img {
+  width: 100%;
+  height: 229px;
+  border-radius: 5px;
+}
+
+.car-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day-p {
+  margin-left: 22px;
+  margin-top: -10px;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -194,6 +267,16 @@ footer {
 
   .about-secondary {
     max-width: 600px;
+  }
+
+  .cars-list-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .car-div {
+    width: 30%;
   }
 
   footer {

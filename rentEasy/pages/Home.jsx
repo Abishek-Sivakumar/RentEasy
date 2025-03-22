@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router";
+import cars from "./data.js";
+
 export default function Home() {
+  console.log(cars);
+
   return (
     <div className="home-container">
       <h1>You got the travel plans, we got the travel cars</h1>

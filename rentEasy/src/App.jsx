@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Cars from "../pages/Cars";
+import CarDetails from "../pages/CarDetails";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/cars" element={<Cars />}></Route>
+        <Route path="/cars/:id" element={<CarDetails />}></Route>
       </Routes>
       <footer>Ⓒ Made by Abishek #RentEasy</footer>
     </BrowserRouter>
