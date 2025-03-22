@@ -25,7 +25,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/cars" element={<Cars />}></Route>
       </Routes>
-      <footer>ⒸMade by Abishek #RentEasy</footer>
+      <footer>Ⓒ Made by Abishek #RentEasy</footer>
     </BrowserRouter>
   );
 }
