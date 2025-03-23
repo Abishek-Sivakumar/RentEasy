@@ -15,31 +15,45 @@ export default function CarDetails() {
     });
   }, []);
 
+  let typeClass;
+  if (car) {
+    if (car.type == "luxury") {
+      typeClass = "car-type luxury";
+    } else if (car.type == "simple") {
+      typeClass = "car-type simple";
+    } else {
+      typeClass = "car-type economy";
+    }
+  }
+
   return (
-    <div className="about-container">
-      {car ? (
-        <>
-          <Link to="/cars">&larrBack to Cars</Link>
-          <img src={car.imageUrl} />
-          <div className="about-primary">
-            <h2>
-              Don’t squeeze in a two-wheeler when you could relax in a car.
-            </h2>
-            <p>
-              Our mission is to enliven your road trip with the perfect travel
-              van rental. Our vans are recertified before each trip to ensure
-              your travel plans can go off without a hitch. (Hitch costs extra
-              😉)
-            </p>
-            <p>
-              Our team is full of vanlife enthusiasts who know firsthand the
-              magic of touring the world on 4 wheels.
-            </p>
-          </div>
-        </>
-      ) : (
-        <h1>Loading...</h1>
-      )}
-    </div>
+    <>
+      <Link to="/cars" className="car-detail-back-link">
+        ← Back to Cars
+      </Link>
+
+      <div className="car-detail-container">
+        {car ? (
+          <>
+            <div className="car-detail-img-div">
+              <img src={car.imageUrl} className="car-detail-img" />
+            </div>
+            <div className="car-detail-primary">
+              <div className={car ? `car-type ${car.type}` : null}>
+                {car.type}
+              </div>
+              <h1>{car.name}</h1>
+              <p>
+                <span>₹{car.price}</span>/Day
+              </p>
+              <p className="car-detail-description">{car.description}</p>
+              <Link to="/cars">Rent this Car</Link>
+            </div>
+          </>
+        ) : (
+          <h1>Loading...</h1>
+        )}
+      </div>
+    </>
   );
 }
