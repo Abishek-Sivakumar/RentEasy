@@ -1,5 +1,5 @@
 import React from "react";
-import data from "./data.js";
+import data from "../data.js";
 import { Link } from "react-router";
 export default function Cars() {
   const [cars, setCars] = React.useState([]);

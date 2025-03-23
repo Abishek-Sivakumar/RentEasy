@@ -1,6 +1,6 @@
 import React, { use } from "react";
 import { Link, useParams } from "react-router";
-import cars from "./data.js";
+import cars from "../data.js";
 
 export default function CarDetails() {
   const params = useParams();

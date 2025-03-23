@@ -193,9 +193,18 @@ header {
 .header-nav {
   display: flex;
   align-items: end;
-  justify-content: space-around;
-  width: 7.25rem;
+  justify-content: space-between;
+  width: 9rem;
   height: 1.3rem;
+  /* background-color: #e17654; */
+}
+
+.header-nav a:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: "#161616";
+  /* background-color: #161616;
+  color: white; */
 }
 
 .home-container {
@@ -308,12 +317,30 @@ header {
   margin-bottom: 1.3rem;
 }
 
+.host-nav {
+  display: flex;
+}
+
+.host-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #4d4d4d;
+  padding: 5px 20px;
+}
+
+.host-nav a:hover {
+  color: #161616;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
   /* padding: 1.5rem 6.6rem; */
-  height: 9.8vh;
+  height: 65px;
   background-color: #252525;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -370,6 +397,6 @@ footer {
   }
 
   footer {
-    height: 11vh;
+    height: 80px;
   }
 }
