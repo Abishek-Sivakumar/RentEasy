@@ -393,9 +393,13 @@ header {
 }
 
 .host-car-list-single > img {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 5px;
+}
+
+.host-van-info > p {
+  margin-bottom: 0.5rem;
 }
 
 footer {
