@@ -365,6 +365,10 @@ footer {
     /* background-color: #e17654; */
   }
 
+  .car-detail-container .car-type {
+    margin-top: 2.1rem;
+  }
+
   footer {
     height: 11vh;
   }
