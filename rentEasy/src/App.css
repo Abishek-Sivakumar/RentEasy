@@ -179,9 +179,27 @@ a {
   margin-top: 0;
 }
 
+.host-van-info > h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #161616;
+}
+
+.host-van-info > p {
+  font-weight: 500;
+  color: #4d4d4d;
+  font-size: 1rem;
+}
+
 /* -----------------
     Layout
 --------------------*/
+
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 header {
   display: flex;
@@ -220,7 +238,7 @@ header {
   background-position: center;
   color: white;
   padding: 4rem 1.6rem;
-  height: 80vh;
+  height: 82vh;
 }
 
 .about-container {
@@ -325,7 +343,7 @@ header {
   text-decoration: none;
   font-weight: 500;
   color: #4d4d4d;
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 .host-nav a:hover {
@@ -334,13 +352,59 @@ header {
   font-weight: 600;
 }
 
+.host-cars-section {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.host-cars-title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.host-cars-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.5rem;
+  flex: 1 0;
+}
+
+.host-car-link-wrapper {
+  width: 100%;
+  text-decoration: none;
+}
+
+.host-cars-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  gap: 1rem;
+}
+
+.host-car-list-single {
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  background-color: #ffffff;
+  gap: 1rem;
+}
+
+.host-car-list-single > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: auto;
   /* padding: 1.5rem 6.6rem; */
-  height: 65px;
+  height: 52px;
   background-color: #252525;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -394,6 +458,53 @@ footer {
 
   .car-detail-container .car-type {
     margin-top: 2.1rem;
+  }
+
+  .host-cars-title {
+    text-align: center;
+  }
+
+  .host-cars-list {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .host-car-link-wrapper {
+    height: 150px;
+  }
+
+  .host-car-list-single {
+    height: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .host-car-list-single > img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+  }
+
+  /* .host-van-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  } */
+
+  .host-van-info > h3 {
+    font-size: 1.45rem;
+  }
+
+  .host-van-info > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
   }
 
   footer {

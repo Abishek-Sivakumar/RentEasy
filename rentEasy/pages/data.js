@@ -8,6 +8,7 @@ const data = [
     imageUrl:
       "https://spn-sta.spinny.com/blog/20220228125031/Alto-800-Black.jpg",
     type: "economy",
+    hostId: 123,
   },
   {
     id: "2",
@@ -18,6 +19,7 @@ const data = [
     imageUrl:
       "https://gaadiwaadi.com/wp-content/uploads/2022/09/modified-mahindra-thar-16.jpg",
     type: "luxury",
+    hostId: 456,
   },
   {
     id: "3",
@@ -28,6 +30,7 @@ const data = [
     imageUrl:
       "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Galleries/20141107111837_swiftfront34.jpg&w=736&h=488&q=75&c=1",
     type: "simple",
+    hostId: 789,
   },
   {
     id: "4",
@@ -38,6 +41,7 @@ const data = [
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/2018_Suzuki_Karimun_Wagon_R_GL_%28front%29.jpg/500px-2018_Suzuki_Karimun_Wagon_R_GL_%28front%29.jpg",
     type: "economy",
+    hostId: 123,
   },
   {
     id: "5",
@@ -48,6 +52,7 @@ const data = [
     imageUrl:
       "https://images.carmag.co.za/wp-content/uploads/2024/07/i20NLine_FRONT_01-1024x614.webp",
     type: "simple",
+    hostId: 123,
   },
   {
     id: "6",
@@ -58,6 +63,7 @@ const data = [
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/2022_Toyota_Kijang_Innova_2.4_G_GUN142R_%2820220302%29.jpg/420px-2022_Toyota_Kijang_Innova_2.4_G_GUN142R_%2820220302%29.jpg",
     type: "luxury",
+    hostId: 456,
   },
 ];
 export default data;
