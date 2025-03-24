@@ -28,8 +28,8 @@ export default function CarDetails() {
 
   return (
     <>
-      <Link to="/cars" className="car-detail-back-link">
-        ← Back to Cars
+      <Link to="/cars" className="back-button">
+        &larr; <span>Back to all vans</span>
       </Link>
 
       <div className="car-detail-container">

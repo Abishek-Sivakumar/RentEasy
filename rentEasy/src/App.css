@@ -179,18 +179,46 @@ a {
   margin-top: 0;
 }
 
-.host-van-info > h3 {
+.host-car-info > h3 {
   font-weight: 600;
   font-size: 1.25rem;
   color: #161616;
 }
 
-.host-van-info > p {
+.host-car-info > p {
   font-weight: 500;
   color: #4d4d4d;
   font-size: 1rem;
 }
 
+.host-car-detail-layout-container {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 2rem auto auto auto;
+}
+
+.host-car-detail {
+  display: flex;
+  align-items: center;
+}
+
+.host-car-detail > img {
+  height: 160px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.host-car-detail-info-text > h3 {
+  margin-top: 1.5rem;
+  margin-top: 5px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.host-car-detail-info-text > h4 {
+  font-size: 20px;
+  margin-block: 0;
+}
 /* -----------------
     Layout
 --------------------*/
@@ -398,11 +426,11 @@ header {
   border-radius: 5px;
 }
 
-.host-van-info > p {
+.host-car-info > p {
   margin-bottom: 0.5rem;
 }
 
-footer {
+.host-car footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,6 +441,63 @@ footer {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.host-car-detail > img {
+  width: 50%;
+}
+
+.car-type {
+  margin-top: 5px;
+}
+
+.back-button {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-top: 60px;
+  margin-left: 26px;
+}
+
+.back-button span:hover {
+  text-decoration: underline;
+}
+
+.host-car-detail-nav {
+  display: flex;
+  margin-block: 25px;
+}
+
+.host-car-detail-nav a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+
+.host-car-detail-nav a:first-of-type {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  padding: 5px 15px;
+  margin-left: -15px;
+}
+
+.host-car-detail-nav a:hover {
+  color: #161616;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #161616;
+  color: #aaaaaa;
+  height: 74px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-weight: 500;
+}
 /* -----------------
     Media Queries
 --------------------*/
@@ -495,20 +580,47 @@ footer {
     border-radius: 5px;
   }
 
-  /* .host-van-info {
+  /* .host-car-info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   } */
 
-  .host-van-info > h3 {
+  .host-car-info > h3 {
     font-size: 1.45rem;
   }
 
-  .host-van-info > p {
+  .host-car-info > p {
     margin-top: 0.5rem;
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
+  }
+
+  .host-car-detail-layout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .host-car-detail {
+    width: 50%;
+    /* background-color: #e17654; */
+  }
+
+  .host-car-detail > img {
+    width: 500px;
+    height: 40vh;
+  }
+
+  .host-car-detail-info-text > h3 {
+    margin-top: 1.5rem;
+    font-size: 46px;
+    font-weight: 700;
+  }
+
+  .host-car-detail-info-text > h4 {
+    font-size: 30px;
+    margin-block: 0;
   }
 
   footer {
