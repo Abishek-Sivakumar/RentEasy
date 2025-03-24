@@ -75,7 +75,7 @@ export default function HostCarDetails() {
             Photos
           </NavLink>
         </nav>
-        <Outlet />
+        <Outlet context={{ currentCar }} />
       </div>
     </section>
   );
