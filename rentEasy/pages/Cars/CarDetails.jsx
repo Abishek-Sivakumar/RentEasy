@@ -1,9 +1,10 @@
 import React, { use } from "react";
-import { Link, useParams } from "react-router";
+import { Link, useParams, useLocation } from "react-router";
 import cars from "../data.js";
 
 export default function CarDetails() {
   const params = useParams();
+  const location = useLocation();
   const [car, setcar] = React.useState();
 
   React.useEffect(() => {
@@ -26,10 +27,19 @@ export default function CarDetails() {
     }
   }
 
+  // {location.state.search ? `${location.state.search.slice(5)}` : `all`}{" "}
+
   return (
     <>
-      <Link to="/cars" className="back-button">
-        &larr; <span>Back to all vans</span>
+      <Link
+        to={location.state.search ? `..?${location.state.search}` : `..`}
+        relative="path"
+        className="back-button"
+      >
+        &larr;{" "}
+        <span>
+          Back to {location.state.type ? `${location.state.type}` : `all`} vans
+        </span>
       </Link>
 
       <div className="car-detail-container">

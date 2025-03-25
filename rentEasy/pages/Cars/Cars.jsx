@@ -40,7 +40,10 @@ export default function Cars() {
 
     return (
       <div className="car-div" key={car.id}>
-        <Link to={`/cars/${car.id}`}>
+        <Link
+          to={car.id}
+          state={{ search: searchParams.toString(), type: typeFilter }}
+        >
           <div className="image-div">
             <img src={car.imageUrl}></img>
           </div>
