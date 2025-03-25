@@ -249,7 +249,7 @@ header {
   font-weight: bolder;
   text-decoration: underline;
   color: "#161616";
-  /* background-color: #161616;
+  /* background-color: #161616; car-type
   color: white; */
 }
 
@@ -284,9 +284,85 @@ header {
   border-radius: 10px;
 }
 
+.car-list-type {
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffead0;
+  color: #4d4d4d;
+  margin-top: 10px;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.car-list-type:hover {
+  color: #ffead0;
+}
+
+.car-list-type:focus {
+  outline: none;
+}
+
+.car-list-type.selected {
+  color: #ffead0;
+}
+
+.car-list-type.simple:hover,
+.car-list-type.simple.selected {
+  background-color: #e17654;
+}
+
+.car-list-type.economy:hover,
+.car-list-type.economy.selected {
+  background-color: #115e59;
+}
+
+.car-list-type.luxury:hover,
+.car-list-type.luxury.selected {
+  background-color: #161616;
+}
+
+.car-list-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  /* background-color: #e17654; */
+}
+
+.car-list-filter-buttons > a {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.car-list-filter-buttons .car-type {
+  width: 90px;
+  border: 0;
+  cursor: pointer;
+}
+
+.clear-filters {
+  text-align: start;
+  /* padding-top: 10px; */
+  height: 34px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #4d4d4d;
+  /* background-color: #ff8c38; */
+  width: 100px;
+  cursor: pointer;
+}
+
 .cars-container {
   width: 100%;
-  padding: 0;
+  padding-inline: 23px;
 }
 
 .cars-list-div {
@@ -296,6 +372,7 @@ header {
   padding: 1rem;
   gap: 1.5rem;
   flex: 1 0;
+  margin-top: 10px;
 }
 
 .car-div {
@@ -551,6 +628,14 @@ footer {
     max-width: 600px;
   }
 
+  .car-list-filter-buttons {
+    margin-left: 40%;
+  }
+
+  .clear-filters {
+    padding-top: 20px;
+  }
+
   .cars-list-div {
     flex-direction: row;
     flex-wrap: wrap;
@@ -570,7 +655,7 @@ footer {
     margin-bottom: 8.2rem;
     height: 50vh;
     gap: 2rem;
-    /* background-color: #e17654; */
+    /* background-color: #e17654; economy*/
   }
 
   .car-detail-container .car-type {
