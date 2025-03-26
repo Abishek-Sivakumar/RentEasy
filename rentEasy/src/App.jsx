@@ -4,6 +4,7 @@ import siteLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router";
+import Login from "../pages/Login";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Cars from "../pages/Cars/Cars";
@@ -42,6 +43,7 @@ function App() {
             </Route>
           </Route>
           <Route path="*" element={<NotFound />} />
+          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
