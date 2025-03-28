@@ -11,6 +11,7 @@ import Cars from "../pages/Cars/Cars";
 import CarDetails from "../pages/Cars/CarDetails";
 import Layout from "../src/components/Layout";
 import HostLayout from "../src/components/HostLayout";
+import AuthRequired from "./components/AuthRequired";
 import Dashboard from "../pages/Host/Dashboard";
 import Reviews from "../pages/Host/Reviews";
 import Income from "../pages/Host/Income";
@@ -31,17 +32,20 @@ function App() {
           <Route path="cars" element={<Cars />}></Route>
           <Route path="cars/:id" element={<CarDetails />}></Route>
 
-          <Route path="host" element={<HostLayout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="reviews" element={<Reviews />} />
-            <Route path="income" element={<Income />} />
-            <Route path="cars" element={<HostCars />} />
-            <Route path="cars/:id" element={<HostCarDetails />}>
-              <Route index element={<HostCarInfo />} />
-              <Route path="pricing" element={<HostCarPricing />} />
-              <Route path="photos" element={<HostCarPhotos />} />
+          <Route element={<AuthRequired />}>
+            <Route path="host" element={<HostLayout />}>
+              <Route index element={<Dashboard />} />
+              <Route path="reviews" element={<Reviews />} />
+              <Route path="income" element={<Income />} />
+              <Route path="cars" element={<HostCars />} />
+              <Route path="cars/:id" element={<HostCarDetails />}>
+                <Route index element={<HostCarInfo />} />
+                <Route path="pricing" element={<HostCarPricing />} />
+                <Route path="photos" element={<HostCarPhotos />} />
+              </Route>
             </Route>
           </Route>
+
           <Route path="*" element={<NotFound />} />
           <Route path="login" element={<Login />} />
         </Route>
