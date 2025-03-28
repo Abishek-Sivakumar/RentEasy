@@ -669,6 +669,11 @@ header .login-icon {
   color: #161616;
 }
 
+.login-msg {
+  color: red;
+  margin-bottom: 20px;
+}
+
 footer {
   background-color: #161616;
   color: #aaaaaa;

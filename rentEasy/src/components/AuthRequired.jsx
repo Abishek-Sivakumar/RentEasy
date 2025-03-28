@@ -3,5 +3,9 @@ import { Navigate, Outlet } from "react-router";
 
 export default function AuthRequired() {
   const authenticated = false;
-  return authenticated ? <Outlet /> : <Navigate to="/login" />;
+  return authenticated ? (
+    <Outlet />
+  ) : (
+    <Navigate to="/login" state={{ message: "You must login first !" }} />
+  );
 }
